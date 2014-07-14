@@ -1,0 +1,21 @@
+application: kangjekangje
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /
+  static_files: main.html
+  upload: main.html
+
+- url: /idea.html
+  static_files: idea.html
+  upload: idea.html
+
+- url: /maps.html
+  static_files: maps.html
+  upload: maps.html
+
+- url: /(.*)
+  static_files: \1
+  upload: (.*)
